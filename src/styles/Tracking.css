@@ -1,0 +1,7 @@
+/* Isi disini ya untuk styling BMI Tracking */
+
+.trackingContent{
+  max-width: 1280px;
+  margin: 2rem auto;
+  height: 100vh; /* line ini diapus aja yak */
+}
