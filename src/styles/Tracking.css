@@ -2,6 +2,202 @@
 
 .trackingContent{
   max-width: 1280px;
-  margin: 2rem auto;
-  height: 100vh; /* line ini diapus aja yak */
+  margin: 0 auto 2rem auto;
+  min-height: 100vh; /* line ini diapus aja yak */
+}
+
+.trackingHeader{
+  background-color: #4f46e5;
+  padding: 4rem 0;
+}
+
+.trackingHeader h1{
+  margin: 0;
+  font-size: 3.5em;
+  color: white;
+}
+
+.bmiAdults{
+  width: 95%;
+  max-width: 1280px;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.bmiAdults h1{
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgb(190, 190, 190);
+}
+
+.bmiAdultsImage{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  place-items: start center;
+}
+
+.bmiAdultsImage img:nth-child(2){
+  width: 75%;
+}
+
+.bmiChildren{
+  width: 95%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  text-align: left;
+}
+
+.bmiChildren h1{
+  width: 50%;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgb(190, 190, 190);
+}
+
+.trackingChart{
+  width: 95%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+}
+
+.inputData{
+  text-align: start;
+}
+
+.inputHeader h3,p{
+  margin: 0;
+}
+
+.inputHeader h3{
+  font-size: 1.5em;
+  margin-bottom: 0.1rem;
+}
+
+.inputHeader{
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgb(190, 190, 190);
+  margin-bottom: 1rem;
+}
+
+.inputs{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inputs div{
+  display: flex;
+  align-items: center;
+}
+
+.inputs label{
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.inputs input{
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  border: rgb(173, 173, 173) solid 2px;
+  outline: none;
+}
+
+.inputs input:focus{
+  border: #4f46e5 solid 2px;
+}
+
+.inputs button{
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #4f46e5;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.inputs button:hover{
+  background-color: #4039d1;
+}
+
+.chart{
+  margin-top: 1rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .trackingHeader{
+    padding: 2.5rem 0;
+  }
+
+  .trackingHeader h1{
+    font-size: 3em;
+  }
+
+  .bmiAdults{
+    text-align: center;
+  }
+
+  .bmiAdultsImage{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    place-items: center;
+  }
+
+  .bmiAdultsImage img:nth-child(2){
+    width: auto;
+  }
+
+  .bmiAdultsImage img{
+    max-width: 100%;
+  }
+
+  .bmiChildren{
+    text-align: center;
+  }
+  
+  .bmiChildren h1{
+    width: 100%;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgb(190, 190, 190);
+  }
+
+  .bmiChildren img{
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .trackingHeader h1{
+    font-size: 2em;
+  }
+
+  .bmiChildren{
+    text-align: center;
+  }
+
+  .bmiAdults h1{
+    font-size: 1.25em;
+    padding-bottom: 0.5rem;
+  }
+  
+  .bmiChildren h1{
+    font-size: 1.25em;
+    padding-bottom: 0.5rem;
+  }
+
+  .inputData{
+    text-align: center;
+  }
+  
+  .inputHeader h3{
+    font-size: 1.25em;
+  }
 }
