@@ -51,7 +51,7 @@ export default function Navbar() {
 				<span className='circle' style={{ left: leftIndicator, display: circleDisp }}></span>
 				<div className='navBottom'>
 					<Link to='/'>
-						<div className={`menu ${loc.pathname == '/' ? 'active' : ''}`}>
+						<div className={`menu ${loc.pathname === '/' ? 'active' : ''}`}>
 							<MdDashboard />
 							<span className='menuName'>Dashboard</span>
 						</div>
