@@ -12,32 +12,37 @@
 
 .row {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	justify-items: center;
-  align-items: center;
+	row-gap: 2rem;
 }
 
-.inputContainer {
+.inputBox {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-.result {
-	margin: auto;
-	font-size: 48px;
-}
-.value {
-	color: #4f46e5;
-}
-
-.inputContainer {
 	flex-direction: column;
 	padding: 16px;
 	background-color: #4f46e5;
 	width: 320px;
-	height: 260px;
 	border-radius: 8px;
+	margin-bottom: 1rem;
+}
+
+.inputTitle {
+	font-size: 2rem;
+	font-weight: 700;
+	color: rgb(245, 245, 245);
+	margin-bottom: 1.5rem;
+}
+
+.category {
+	font-size: 28px;
+	font-weight: 400;
+}
+.value {
+	font-size: 48px;
+	color: #4f46e5;
+	margin-bottom: 1rem;
+	font-weight: 700;
 }
 
 .male,
@@ -63,23 +68,31 @@
 .inputData {
 	width: 100%;
 }
-.inputData button {
-	width: 100%;
-	background-color: rgb(245, 245, 245);
-	border: none;
-	border-radius: 4px;
-	padding: 10px;
-	color: #4f46e5;
-	cursor: pointer;
-}
+
 .heightInput,
 .weightInput {
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	flex-direction: column;
 	margin-bottom: 1rem;
 }
-#heightValue, #weightValue {
+
+.heightInput label,
+.weightInput label {
+	text-align: left;
+	margin-bottom: 0.5rem;
+	font-weight: 600;
+	color: rgb(245, 245, 245);
+}
+
+.heightInputSlider,
+.weightInputSlider {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#heightValue,
+#weightValue {
 	color: rgb(245, 245, 245);
 }
 input[type='range'] {
@@ -99,13 +112,31 @@ input[type='range']::-webkit-slider-thumb {
 	background-color: black;
 	cursor: pointer;
 }
+.calculateButton {
+	width: 100%;
+	padding: 12px;
+	font-weight: 700;
+	background-color: #4f46e5;
+	border: none;
+	border-radius: 4px;
+	color: rgb(245, 245, 245);
+	cursor: pointer;
+	transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s; /* Safari */
+}
+
+.calculateButton:hover {
+	background-color: white;
+	color: #4f46e5;
+	transform: translateY(-2px);
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 @media screen and (max-width: 768px) {
 	.calculatorContent {
 		margin: 0 1rem;
 	}
 	.row {
-		grid-template-columns: 1fr;
 		row-gap: 1rem;
 	}
 }
@@ -114,7 +145,7 @@ input[type='range']::-webkit-slider-thumb {
 	.row {
 		width: 100%;
 	}
-	.inputContainer {
+	.inputBox {
 		width: 100%;
 	}
 }

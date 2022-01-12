@@ -28,46 +28,45 @@ export default function Calculator() {
 		<div className='calculatorContent'>
 			<h1>Calculate your Body Mass Index</h1>
 			<div className='row'>
-				<div className='col result'>
-					<div className='value'>
-						{bmiResult}
-					</div>
+				<div className='result'>
+					<div className='value'>{bmiResult}</div>
 					<div className='category'>{bmiMsg}</div>
 				</div>
-				<div className='col inputContainer'>
-					<div className='inputGender'>
-						<div className='male' id='male'>
-							<img src='/icons8-male-100.png' alt='male-icon' />
-						</div>
-						<div className='female' id='female'>
-							<img src='/icons8-female-100.png' alt='female-icon' />
+				<div className='inputContainer'>
+					<div className='inputBox'>
+						<div className='inputTitle'>BMI Counter</div>
+						<div className='inputData'>
+							<div className='heightInput'>
+								<label htmlFor='height'>Your Height</label>
+								<div className='heightInputSlider'>
+									<input
+										type='range'
+										min='0'
+										max='250'
+										value={height}
+										id='height'
+										onChange={handleHeightValueChange}
+									/>
+									<span id='heightValue'>{`${height}cm`}</span>
+								</div>
+							</div>
+							<div className='weightInput'>
+								<label htmlFor='height'>Your Weight</label>
+								<div className='heightInputSlider'>
+									<input
+										type='range'
+										min='0'
+										max='300'
+										value={weight}
+										id='weight'
+										onChange={handleWeightValueChange}
+									/>
+									<span id='weightValue'>{`${weight}kg`}</span>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div className='inputData'>
-						<div className='heightInput'>
-							<input
-								type='range'
-								min='0'
-								max='250'
-								value={height}
-								id='height'
-								onChange={handleHeightValueChange}
-							/>
-							<span id='heightValue'>{`${height}cm`}</span>
-						</div>
-						<div className='weightInput'>
-							<input
-								type='range'
-								min='0'
-								max='300'
-								value={weight}
-								id='weight'
-								onChange={handleWeightValueChange}
-							/>
-							<span id='weightValue'>{`${weight}kg`}</span>
-						</div>
-						<button onClick={calculateBmi}>Calculate</button>
-					</div>
+					<button className='calculateButton' onClick={calculateBmi}>Calculate</button>
 				</div>
 			</div>
 		</div>
