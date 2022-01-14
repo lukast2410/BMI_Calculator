@@ -61,7 +61,7 @@ export default function Home() {
               <div class="card-info">
                 <h2>Obesitas Tingakt 2</h2>
               </div>
-              <h2 class="percentage">30> </h2>
+              <h2 class="percentage">30 ></h2>
             </div>
           </div>
         </div>
