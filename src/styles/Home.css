@@ -28,7 +28,6 @@ h3 {
 }
 
 main {
-    font-family: "Poppins", sans-serif;
     min-height: 100vh;
     background: linear-gradient(to right top, #4f46e5, #6cdbeb);
     display: flex;
