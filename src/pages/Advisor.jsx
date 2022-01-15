@@ -1,30 +1,43 @@
-import '../styles/Advisor.css'
+import { Link } from "react-router-dom";
+
+import "../styles/Advisor.css";
 
 export default function Advisor() {
-
   // var bmiResult = document.getElementById("bmiResult");
   // var suggestion = document.getElementById("suggestion");
 
   // if(bmiResult.value <= 18.5 ){
-    // suggestion.value = "You are underweight. Try to increase your weight"
+  // suggestion.value = "You are underweight. Try to increase your weight"
   // }
   // else if(bmiResult.value >= 18.5 && bmiResult.value <= 24.9 ){
-      // suggestion.value = "You have normal weight"
+  // suggestion.value = "You have normal weight"
   // }
   // else if(bmiResult.value >= 25 && bmiResult.value <= 29.9 ){
-      // suggestion.value = "You are overweight. Try to reduce your weight"
+  // suggestion.value = "You are overweight. Try to reduce your weight"
   // }
   // else if(bmiResult.value >= 30){
-      // suggestion.value = "You are obesity. You need to reduce your weight and control your consumption"
+  // suggestion.value = "You are obesity. You need to reduce your weight and control your consumption"
   // }
-
 
   return (
     <div className="advisorContent">
       {/* isi disini ya untuk Advisor */}
       <h2>Advisor</h2>
-      <p className='advisorText'>
-      BMI is a measurement of a person's leanness or corpulence based on their height and weight, and is intended to quantify tissue mass. It is widely used as a general indicator of whether a person has a healthy body weight for their height. Specifically, the value obtained from the calculation of BMI is used to categorize whether a person is underweight, normal weight, overweight, or obese depending on what range the value falls between. These ranges of BMI vary based on factors such as region and age, and are sometimes further divided into subcategories such as severely underweight or very severely obese. Being overweight or underweight can have significant health effects, so while BMI is an imperfect measure of healthy body weight, it is a useful indicator of whether any additional testing or action is required. Refer to the table below to see the different categories based on BMI that are used by the calculator.
+      <p className="advisorText">
+        BMI is a measurement of a person's leanness or corpulence based on their
+        height and weight, and is intended to quantify tissue mass. It is widely
+        used as a general indicator of whether a person has a healthy body
+        weight for their height. Specifically, the value obtained from the
+        calculation of BMI is used to categorize whether a person is
+        underweight, normal weight, overweight, or obese depending on what range
+        the value falls between. These ranges of BMI vary based on factors such
+        as region and age, and are sometimes further divided into subcategories
+        such as severely underweight or very severely obese. Being overweight or
+        underweight can have significant health effects, so while BMI is an
+        imperfect measure of healthy body weight, it is a useful indicator of
+        whether any additional testing or action is required. Refer to the table
+        below to see the different categories based on BMI that are used by the
+        calculator.
       </p>
       <div className="table-bmi">
         <h2>BMI Table</h2>
@@ -51,7 +64,6 @@ export default function Advisor() {
           </tr>
         </table>
       </div>
-      
 
       {/* <h2>Your result is</h2>
       <div className="bmiresult" weight="150px" height="150px" >
@@ -96,16 +108,15 @@ export default function Advisor() {
       <br />
       <br />
       <div className="suggestion">
-        <a href="AdvisorDetail.jsx">More Details {'>>'}</a>
-      </div> 
+        {/*<a href="AdvisorDetail.jsx">More Details {">>"}</a>*/}
+        <Link to="/advisordetail">More Details</Link>
+      </div>
 
       <br />
       <br />
-
     </div>
-  )
-};
-
+  );
+}
 
 // Di bawah 18,5 = Berat badan kurang
 // 18,5 – 24,9 = Berat badan normal

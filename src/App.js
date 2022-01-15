@@ -24,6 +24,7 @@ function App() {
           <Route path='/detail' element={<AdvisorDetail/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/register' element={<Register/>}/>
+          <Route path='/advisordetail' element={<AdvisorDetail/>}/>
         </Routes>
         <Footer/>
       </Router>

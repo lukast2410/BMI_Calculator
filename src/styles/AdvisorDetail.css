@@ -1,7 +1,19 @@
 /* Isi disini ya untuk styling Advisor Detail */
 
-.detailContent{
+.detailContent {
   max-width: 1280px;
   margin: 2rem auto;
   height: 100vh; /* line ini diapus aja yak */
+  /*css lu ga gue pakek, footernya error ntar*/
+}
+
+.adetail {
+  padding: 7px 10px;
+  font-weight: bold;
+  color: rgb(102, 102, 102);
+}
+
+.adetailc {
+  padding: 7px 10px;
+  color: rgb(102, 102, 102);
 }
