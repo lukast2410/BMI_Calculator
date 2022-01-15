@@ -1,7 +1,151 @@
 /* Isi disini ya untuk styling BMI Calculator */
 
-.calculatorContent{
-  max-width: 1280px;
-  margin: 2rem auto;
-  height: 100vh; /* line ini diapus aja yak */
+.calculatorContent {
+	max-width: 1280px;
+	margin: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 90vh;
+}
+
+.row {
+	display: grid;
+	row-gap: 2rem;
+}
+
+.inputBox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 16px;
+	background-color: #4f46e5;
+	width: 320px;
+	border-radius: 8px;
+	margin-bottom: 1rem;
+}
+
+.inputTitle {
+	font-size: 2rem;
+	font-weight: 700;
+	color: rgb(245, 245, 245);
+	margin-bottom: 1.5rem;
+}
+
+.category {
+	font-size: 28px;
+	font-weight: 400;
+}
+.value {
+	font-size: 48px;
+	color: #4f46e5;
+	margin-bottom: 1rem;
+	font-weight: 700;
+}
+
+.male,
+.female {
+	width: 80px;
+	height: 80px;
+	background-color: rgb(245, 245, 245);
+	border-radius: 10px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.male img,
+.female img {
+	width: 100%;
+}
+.inputGender {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 1.5rem;
+}
+.inputData {
+	width: 100%;
+}
+
+.heightInput,
+.weightInput {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
+}
+
+.heightInput label,
+.weightInput label {
+	text-align: left;
+	margin-bottom: 0.5rem;
+	font-weight: 600;
+	color: rgb(245, 245, 245);
+}
+
+.heightInputSlider,
+.weightInputSlider {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#heightValue,
+#weightValue {
+	color: rgb(245, 245, 245);
+}
+input[type='range'] {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 70%;
+	height: 2px;
+	background-color: #ccc;
+	outline: none;
+}
+input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: black;
+	cursor: pointer;
+}
+.calculateButton {
+	width: 100%;
+	padding: 12px;
+	font-weight: 700;
+	background-color: #4f46e5;
+	border: none;
+	border-radius: 4px;
+	color: rgb(245, 245, 245);
+	cursor: pointer;
+	transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s; /* Safari */
+}
+
+.calculateButton:hover {
+	background-color: white;
+	color: #4f46e5;
+	transform: translateY(-2px);
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+	.calculatorContent {
+		margin: 0 1rem;
+	}
+	.row {
+		row-gap: 1rem;
+	}
+}
+
+@media screen and (max-width: 428px) {
+	.row {
+		width: 100%;
+	}
+	.inputBox {
+		width: 100%;
+	}
 }
