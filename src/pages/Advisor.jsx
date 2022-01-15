@@ -108,8 +108,7 @@ export default function Advisor() {
       <br />
       <br />
       <div className="suggestion">
-        {/*<a href="AdvisorDetail.jsx">More Details {">>"}</a>*/}
-        <Link to="/advisordetail">More Details</Link>
+        <a href="AdvisorDetail.jsx">More Details {">>"}</a>
       </div>
 
       <br />
