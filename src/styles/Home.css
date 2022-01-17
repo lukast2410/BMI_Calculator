@@ -1,32 +1,32 @@
-* {
+.homeContent * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-h1 {
+.homeContent h1 {
     color: #426696;
     font-weight: 600;
     font-size: 28px;
     opacity: 0.8;
 }
 
-h2,
+.homeContent h2,
 p {
-    color: #658ec6;
+    color: #4976b6;
     font-weight: 500;
     font-size: 25px;
     opacity: 0.8;
 }
 
-h3 {
+.homeContent h3 {
     color: #426696;
     font-weight: 600;
     font-size: 25px;
     opacity: 0.8;
 }
 
-main {
+.homeContent {
     padding: 5rem 0;
     min-height: 100vh;
     background: linear-gradient(to right top, #4f46e5, #6cdbeb);

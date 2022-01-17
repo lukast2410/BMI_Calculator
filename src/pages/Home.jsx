@@ -3,7 +3,7 @@ import '../styles/Home.css'
 
 export default function Home() {
 	return (
-		<main>
+		<main className='homeContent'>
 			<div className='join'>
 				<div className='joinus'>Join Us</div>
 				<div>
