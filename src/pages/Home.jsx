@@ -1,8 +1,17 @@
+import { Link } from 'react-router-dom'
 import '../styles/Home.css'
 
 export default function Home() {
 	return (
 		<main>
+			<div className='join'>
+				<div className='joinus'>Join Us</div>
+				<div>
+					<Link to='/login'>
+						<div className='loginBtn'>Join</div>
+					</Link>
+				</div>
+			</div>
 			<section className='glass'>
 				<div className='dashboard'>
 					<div className='user'>

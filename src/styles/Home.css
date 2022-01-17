@@ -31,8 +31,39 @@ main {
     min-height: 100vh;
     background: linear-gradient(to right top, #4f46e5, #6cdbeb);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.join{
+    width: 95%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 2rem 1rem;
+}
+
+.joinus{
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.loginBtn{
+    position: relative;
+    z-index: 10;
+    background-color: #4f46e5;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    font-size: 1.25em;
+    font-weight: 500;
+    color: white;
+}
+
+.loginBtn:hover{
+    background-color: #443dd4;
 }
 
 .glass {
@@ -202,5 +233,15 @@ main {
 
     .info{
         margin: 3rem 1.5rem 1.5rem 1.5rem;
+    }
+
+    .join{
+        flex-direction: column;
+    }
+
+    .joinus{
+        position: relative;
+        z-index: 10;
+        color: #4f46e5;
     }
 }
